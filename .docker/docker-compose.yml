@@ -22,7 +22,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ../.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf  # Monta la configurazione personalizzata
-      - ../src:/var/www/html  # Monta la directory del codice sorgente
+      - ../.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ../src:/var/www/html
     depends_on:
       - php
